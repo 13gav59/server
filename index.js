@@ -4,7 +4,7 @@ const app = express();
 
 const PORT = 8080;
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
   res.send("hello");
   console.log("payload recieved");
 });
